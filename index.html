@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Todo.vue</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <header>
+    <h1>Todo.vue</h1>
+  </header>
+
+  <div id="app">
+
+    <div class="input">
+      <input type="text" maxlength="50" v-model="newTodo" placeholder=" new Todo"/>
+      <button @click="doAdd">Add Todo</button>
+
+    </div>
+
+    <div class="todos">
+      <h2>Todo : </h2>
+      <ul>
+        <li v-for="(todo,index) in todos" :key="todo.id">
+          <p>
+            {{todo.val}}
+          </p>
+          <button @click="done(index)">Done</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="doneTodos">
+      <h2>Done : </h2>
+      <ul>
+        <li v-for="(todo,index) in doneTodos">
+          <p>
+            {{todo.val}}
+          </p>
+          <button @click="deleted(index)">Delete</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

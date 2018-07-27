@@ -1,0 +1,88 @@
+body{
+  margin:0;
+  padding:0;
+}
+header{
+  width:200px;
+  background-color: #42b983;
+  margin-top:20px;
+  border-radius: 0px 10px 25px 0px/0px 10px 25px 0px;
+  box-shadow: 10px 5px rgba(0,0,0,0.1);
+}
+
+header>h1{
+  padding:10px 15px;
+  color: #fff;
+}
+
+.input{
+  margin:20px;
+}
+
+.input>input{
+  border-radius: 15px;
+  height: 30px;
+  width:300px;
+  border:2px solid rgba(136, 136, 129, 0.69);
+}
+
+.input>input:focus{
+  outline: 0;
+  border-radius: 15px;
+  border:2px solid #42b983;
+
+}
+
+button{
+  outline: 0;
+  border:2px solid #42b983;
+  color: #42b983;
+  background-color: #FFF;
+  border-radius: 15px;
+  height: 30px;
+  padding:0px 10px;
+  margin-left: 5px;
+}
+
+button:hover{
+  background-color: #42b983;
+  color: #fff;
+  cursor: pointer;
+}
+
+h2{
+  color: #2c3e50;
+}
+.todos{
+  margin-left: 10px;
+  border:2px dotted rgba(136, 136, 129, 0.2);
+  border-radius: 10px;
+  float:left;
+  width:350px;
+  padding:10px;
+  box-sizing: border-box;
+}
+
+.doneTodos{
+  margin-left: 10px;
+  border:2px dotted rgba(136, 136, 129, 0.2);
+  border-radius: 10px;
+  float:left;
+  width:350px;
+  padding:10px;
+  box-sizing: border-box;
+}
+
+li{
+  padding: 5px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+  border:2px solid rgba(136, 136, 129, 0.2);
+  border-radius: 5px;
+  list-style: none;
+}
+
+li>button{
+  position: relative;
+    left:210px;
+}
